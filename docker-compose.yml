@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  ds:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/home/jovyan/
+    ports:
+      - "8888:8888"
